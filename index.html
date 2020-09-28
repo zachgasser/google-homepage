@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+    <style>
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: .7fr 1fr;
+            grid-template-areas: 
+                "q w e"
+                "a s d";
+        }
+        
+
+        #logosearch {
+            display: grid;
+            grid-area: s;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr .75fr .5fr;
+            grid-template-areas: 
+                "u u"
+                "j j"
+                "n m";
+        }
+
+        .logo {
+            grid-area: u;
+            justify-self: center;
+        }
+
+        .searchbar {
+            grid-area: j;
+            height: 20%;
+            width: 120%;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .searchbutton {
+            grid-area: n;
+            height: 60%;
+            width: 90%;
+            justify-self: start;
+            align-self: center;
+            font-size: 8pt;
+        }
+
+        .feelinglucky {
+            grid-area: m;
+            height: 60%;
+            width: 100%;
+            justify-self: end;
+            align-self: center;
+            font-size: 8pt;
+        }
+
+
+    </style>    
+    <body>
+        <div id="wrapper">
+            <div id="logosearch">
+                <a class="logo"> 
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </a>
+
+                <input type="search" class="searchbar"></input>
+
+                <button class="searchbutton">Google Search</button>
+
+                <button class="feelinglucky">I'm Feeling Lucky</button>
+            </div>
+
+        </div>
+    </body>
+
+
+    
+
+</html>
